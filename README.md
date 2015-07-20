@@ -1,10 +1,10 @@
-## Reg Guide
+# Reg Dev Guide
 
 ##### Topics:
 
 - Themes
   - Theme.config
-  - File Structure
+  - [File Structure](file_structure/README.md)
 - Custom Presenters/Venues
 - Custom Event Fields
 - Custom Social Authorization
