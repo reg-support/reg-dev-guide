@@ -3,14 +3,39 @@
 - This document will outline all of the major files in a Theme set, as well as provide some basic information on their usages.
 
 
-## Pages
+## Views
 
-- **TODO**: Make teh awesome content here!
+- These files are found under the **Views** parent folder. They represent the actual web pages that will be displayed to a user visiting any page on the Site.
+- The files in the **Pages** folder are the base-level files that are rendered by the server to provide the page to the browser.
+- The files in the **Shared** folder are are _template files_ which are either extended or dynamically inserted into other non-template files.
+
+##### /Pages
+
+- `attend.liquid`
+- `cart.liquid`
+- `catalog.liquid`
+- `confirm.liquid`
+- `event.liquid`
+- `login.liquid`
+- `register.liquid`
+- `reset-password.liquid`
+- `support.liquid`
+- `thanks.liquid`
+- `topic.liquid`
+- `unregister.liquid`
+
+##### /Shared
+
+- `_additionalfields.liquid`
+- `_eventmaster.liquid`
+- `_homemaster.liquid`
+- `_registrationfields.liquid`
+- `_themecss.liquid`
 
 
 ## Emails (a.k.a. Notifications)
 
-- These files are found in the _Notifications_ folder. They represent the layout and content of emails that are sent to registrants on an event-by-event basis.
+- These files are found in the **Notifications** folder. They represent the layout and content of emails that are sent to registrants on an event-by-event basis.
 - This folder _does not_ contain any system emails that get sent directly to Stakeholders.
 - Any files whose names begin with an underscore (`_`) character are _template files_ which are either extended or dynamically inserted into other non-template files. All other files are the bases off of which the actual email content is built.
 - Any files that are intended to be dynamically inserted into another file will be referred to below as 'drop-ins'. They can be inserted into any other template using Liquid's `include` syntax, e.g.:
