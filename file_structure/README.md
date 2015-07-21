@@ -25,6 +25,7 @@
   - `_browser_test_panel.liquid`
     + drop-in panel containing a link to test browser compatibility for the meeting's selected web platform
   - `_de-audio.liquid`
+    + drop-in panel containing audio details for Direct Event audio
   - `_emailmaster.liquid`
     + this is the top-level template for all emails; all of the other email files extend this one, so any changes made here will be reflected in ALL emails
   - `_event_details_panel.liquid`
@@ -38,9 +39,11 @@
   - `_footer.liquid`
     + drop-in containing contact info, copyright, etc.
   - `_generic-audio.liquid`
+    + drop-in panel containing audio details for a generic audio provider (e.g. Reservationless Plus)
   - `_inline_styles.liquid`
     + drop-in containing some of the vital styles defined as liquid strings; we are using this to force inline styles on some elements for better compatibility among various mail clients; think of this file as a 'hacked stylesheet'
   - `_op-assist-audio.liquid`
+    + drop-in panel containing audio details for Operator Assisted audio
   - `_support_panel_full.liquid`
     + drop-in containing full support information, including Q&A and un-registration link
   - `_support_panel_min.liquid`
