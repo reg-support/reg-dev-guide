@@ -13,6 +13,7 @@
 ##### /Pages
 
 - `attend.liquid`
+  + the primary landing page for all information pertinent to an individual event; a link to this page is included in the `confirmation.liquid` notification that is sent to a registrant after successfully registering for an event
 - `cart.liquid`
 - `catalog.liquid`
   + the base page for a Site; displays all Events currently scheduled under the parent Site
@@ -36,9 +37,15 @@
 ##### /Shared
 
 - `_additionalfields.liquid`
+  + drop-in containing additional templates for registration fields, beyond what is defined in `_registrationfields.liquid`
 - `_eventmaster.liquid`
+  + the top-level page that is extended by all pages that pertain to an individual event, including: `attend.liquid`, `confirm.liquid`, `event.liquid`, `register.liquid`, `thanks.liquid`, and `unregister.liquid`
+  + **Note:** this file also extends `_homemaster.liquid`, so any changes you make to _either_ of these files will be reflected in all of the files listed above.
 - `_homemaster.liquid`
+  + the absolute top-level template for all pages; it includes the basic structure shared by all pages and the HTML `<head>` section
+  + **Note:** this page is extended by all others, so any changes made to this page _will be reflected in all pages_
 - `_registrationfields.liquid`
+  + drop-in containing templates for building all necessary fields for a registration form, including default values (e.g. pre-populated drop-down menu of U.S. states)
 - `_themecss.liquid`
 
 
