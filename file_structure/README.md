@@ -27,12 +27,15 @@
 - `register.liquid`
   + the page from which an attendee can register for an event; `event.liquid` links directly to this page from its "Register" button
 - `reset-password.liquid`
+  + the page from a registered user can request an update for his/her account password
 - `support.liquid`
   + **Note:** this page is currently not in use, since our support link redirects to our Freshdesk portal
 - `thanks.liquid`
   + the page that is displayed after registration (and/or payment) has been completed
 - `topic.liquid`
+  + this page shows all of the events scheduled under a pre-defined topic
 - `unregister.liquid`
+  + the page on which a registrant can un-register for an event; the link to this page is sent to the registrant in the `confirmation.liquid` email
 
 ##### /Shared
 
@@ -96,6 +99,7 @@
 - `confirmation.liquid`
   + sent to a registrant as soon as he/she completes the registration process; contains all necessary information for attending the event.
 - `default.liquid`
+  + the fallback/default email that will be sent when the expected email is not present
 - `eventcanceled.liquid`
   + sent to registrants when an event has been cancelled
 - `eventrecording.liquid`
