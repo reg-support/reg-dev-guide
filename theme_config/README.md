@@ -22,11 +22,11 @@
 - for localized sites, we can specify which locale files are available to the site in the `<locales>` element, near the top of the page; e.g. the following block specifies that US English, German, and Spanish are available, with US English being the default:
 
   ```xml
-<locales default="en-US">
-  <add name="en-US"/>
-  <add name="de"/>
-  <add name="es"/>
-</locales>
+  <locales default="en-US">
+    <add name="en-US"/>
+    <add name="de"/>
+    <add name="es"/>
+  </locales>
   ```
 
 - the actual localization maps are specified in `loc.po` files within the **Locales** folder in the theme package
@@ -36,10 +36,10 @@
 
 
 [Back to Top](#top)
-## <a name=#3></a>Pages
+## <a name="3"></a>Pages
 
 [Back to Top](#top)
-## <a name=#4></a>Settings & Groups
+## <a name="4"></a>Settings & Groups
 
 - We can define custom settings within the `<settings>` element. Anything we define here will show up under the "Theme Details" page in a Site's back-end, and can be edited directly from the back-end by clicking on the "Configure Theme" link on the right side of the page.
 - Similar to adding locales, we can add custom settings here by inserting an `<add>` element
@@ -54,29 +54,13 @@
 - putting this all together, we might end up with a settings group that looks something like the following:
 
   ```xml
-<group name="Base Settings">
-  <add name="siteTitle" title="Site Title" type="Text"/>
-  <add name="siteLogo" title="Site Logo" type="Image"/>
-  <add name="siteThemeColor" title="Site Theme Color" type="Color" default="#428BCA"/>
-</group>
+  <group name="Base Settings">
+    <add name="siteTitle" title="Site Title" type="Text"/>
+    <add name="siteLogo" title="Site Logo" type="Image"/>
+    <add name="siteThemeColor" title="Site Theme Color" type="Color" default="#428BCA"/>
+  </group>
   ```
 
 [Back to Top](#top)
 
 [Return to Main Page](https://github.com/reg-support/reg-dev-guide/blob/master/README.md)
-
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- a
-- a
