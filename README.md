@@ -3,7 +3,7 @@
 ##### Topics:
 
 - Themes
-  - Theme.config
+  - [Theme.config](theme_config/README.md)
   - [File Structure](file_structure/README.md)
 - Custom Presenters/Venues
 - Custom Event Fields
