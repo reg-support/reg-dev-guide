@@ -1,8 +1,8 @@
-# Theme.config
+# <a name="top">Theme.config
 
 [Return to Main Page](https://github.com/reg-support/reg-dev-guide/blob/master/README.md)
 
-## <a name="top">Table of Contents
+## Table of Contents
 
 - [Basic Information](#1)
 - [Locales](#2)
@@ -14,6 +14,9 @@
 
 - Theme.config is an XML-based file that allows us to add a variety of customizations to a theme.
 - This guide is written assuming the reader has a basic understanding of the usage and terminology of XML.
+- The following settings do not have any effect on the functionality of the theme--they are purely for informational use.
+  + `<title>` - the title for the theme; this will not appear anywhere on the public Site--only in the back-end.
+  + `<description>` - a simple description for the theme; again, this will not appear on the public Site, so it can be used to display any useful information (e.g. a version number for the theme)
 
 
 [Back to Top](#top)
@@ -37,6 +40,8 @@
 
 [Back to Top](#top)
 ## <a name="3"></a>Pages
+
+- **TODO!**
 
 [Back to Top](#top)
 ## <a name="4"></a>Settings & Groups
@@ -70,5 +75,3 @@
   ```
 
 [Back to Top](#top)
-
-[Return to Main Page](https://github.com/reg-support/reg-dev-guide/blob/master/README.md)
