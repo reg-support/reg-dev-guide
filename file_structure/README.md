@@ -51,6 +51,7 @@
 - `_registrationfields.liquid`
   + drop-in containing templates for building all necessary fields for a registration form, including default values (e.g. pre-populated drop-down menu of U.S. states)
 - `_themecss.liquid`
+  + 'themecss.liquid' houses additonal CSS code for the theme. It overrides the Bootstrap CSS.
 
 
 ## Emails (a.k.a. Notifications)
