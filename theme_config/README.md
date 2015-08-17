@@ -41,7 +41,9 @@
 [Back to Top](#top)
 ## <a name="3"></a>Pages
 
-- **TODO!**
+- The `Pages` section is where you tell IER that you have added a new page to your `Views`. It is also where the default landing page of your site is set.
+- Here is the code that determines the default landing page: `<pages default="catalog" login="login">`.
+- To change the default landing page, just change the string in the `default` attribute to one of the other page names.  
 
 [Back to Top](#top)
 ## <a name="4"></a>Settings & Groups

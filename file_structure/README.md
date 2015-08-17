@@ -109,7 +109,7 @@
 - `eventrescheduled.liquid`
   + sent to registrants when an event has been rescheduled; contains the updated information for the event
 - `forgotpassword.liquid`
-  + sent to a registrant who has requested as password reset
+  + sent to a registrant who has requested a password reset
 - `receipt.liquid`
   + sent to registrants after successfully registering _and paying_ for an event; this email is sent _in addition to_ the `confirmation.liquid` email
 - `reminder.liquid`
