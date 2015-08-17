@@ -24,7 +24,7 @@
 - `event.liquid`
   + **Note:** the URL for this page shows `/details/`, rather than `/event/`
 - `login.liquid`
-  + this is the attendee login page. It is activated only if IER Profile mode has been truned on.
+  + this is the attendee login page. It is activated only if IER Profile mode has been turned on.
 - `register.liquid`
   + the page from which an attendee can register for an event; `event.liquid` links directly to this page from its "Register" button
 - `reset-password.liquid`
