@@ -6,7 +6,7 @@
   - [Theme.config](theme_config/README.md)
   - [File Structure](file_structure/README.md)
 - [Custom Presenters Fields](presenter_fields/README.md)
-- Custom Venue Fields
+- [Custom Venue Fields](venue_fields/README.md)
 - Custom Event Fields
 - Custom Social Authorization
 - SSO
