@@ -2,7 +2,7 @@
 
 ##### Topics:
 
-- [Themes](themes/README.md)
+- [Themes](Themes/README.md)
   - [Theme.config](theme_config/README.md)
   - [File Structure](file_structure/README.md)
 - [Custom Presenters Fields](presenter_fields/README.md)
