@@ -8,6 +8,7 @@
 - [Locales](#2)
 - [Pages](#3)
 - [Settings & Groups](#4)
+- [Connecting Settings & Views](#5)
 
 
 ## <a name="1"></a>Basic Information
@@ -73,7 +74,27 @@
     <add name="siteTitle" title="Site Title" type="Text"/>
     <add name="siteLogo" title="Site Logo" type="Image"/>
     <add name="siteThemeColor" title="Site Theme Color" type="Color" default="#428BCA"/>
+    <add name="siteHeaderColor" title="Site Header Color" type="Color" default="#000000"/>
   </group>
   ```
+
+[Back to Top](#top)
+
+## <a name="5"></a>Connecting Settings & Views
+
+- After you have created your new group and/or setting, it's time to connect it to the registrant view.
+- Remember the `name` attribute that you declared in your `<add>` element above? You can use the attribute within a liquid tag like so: {{theme.settings.siteHeaderColor}}.
+- This tag can then be placed throughout the CSS or the HTML to render the item you added as a setting.
+- Here's an example of what the final product looks like:
+
+```css
+h1, h2 {
+  color: {{theme.settings.siteHeaderColor}}
+}
+```
+ 
+- In the above example, we have applied the Site Header Color style that we declared in Theme.config to both the `h1` and `h2` tags. In this way, we use Liquid to create CSS variables just like we would with LESS or SASS.
+- Liquid can also be used to add text blocks or images to your HTML.
+- For more information on Liquid, [check out this link](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers).
 
 [Back to Top](#top)
