@@ -1,6 +1,6 @@
 # Custom Presenter Fields
 
-- Adding Custom Presenter fields starts in the Admin section of your theme.
+- Adding Custom Presenter Fields starts in the Admin section of your theme.
 - Click on the Admin button > Account Settings > Presenter Fields
 
 ![Admin](img/admin_sm.png)
