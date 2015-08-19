@@ -11,7 +11,7 @@
 - Custom Social Authorization
 - [Notifications](notifications/README.md)
 - SSO
-- Registration importing
+- [Registration importing](reg_import/README.md)
 - What does customization include?
   - Nav Items
   - New Pages
