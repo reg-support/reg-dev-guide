@@ -18,7 +18,7 @@
 
 ### Liquid Tags
 
-- The following Liquid tags are used throughout the Views:
+The following Liquid tags are used throughout the Views:
 
 - Catalog page URL - `siteurl catalog`
 - Identity Authenticated - `identity.authenticated`
