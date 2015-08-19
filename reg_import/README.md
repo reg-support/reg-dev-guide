@@ -30,4 +30,4 @@
 
 - If you use the **Export All Registrants** feature from another meeting, you will get a CSV file containing registrants for that meeting. Unfortunately, this file is not correctly formatted for immediate use in importing to another meeting, because the export process strips underscores from the columns' headers (e.g. "first_name" becomes "first name"). If you wish to use this file, you will need to manually re-add the underscores to the column headers before the system will take your upload.
 - If your CSV contains duplicate email addresses or addresses that are already registered, you will see an error message telling you so. However, this **should not** have any negative impact on the importing process. All non-duplicate registrants in the list should upload just fine. You may need to click "Cancel" in the upload window and refresh your browser to see the results.
-- After you finish uploading, the page **will not** automatically refresh, so you will ned to do so manually to see your newly-added registrants.
+- After you finish uploading, the page **will not** automatically refresh, so you will need to do so manually to see your newly-added registrants.
