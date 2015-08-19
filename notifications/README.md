@@ -20,7 +20,7 @@
 
 ### Liquid Tags
 
-- Unfortunately, the Liquid tags that are used in the IER Views differ from those used in the IER Notifications. Here is a list of the tags that are currently in use:
+Unfortunately, the Liquid tags that are used in the IER Views differ from those used in the IER Notifications. Here is a list of the tags that are currently in use:
 
 - Attend Page - `registrant.attend_page`
 - Audio Passcode - `event.audio_provider.passcode`
