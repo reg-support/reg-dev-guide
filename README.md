@@ -9,6 +9,7 @@
 - [Custom Venue Fields](venue_fields/README.md)
 - Custom Event Fields
 - Custom Social Authorization
+- [Notifications](notifications/README.md)
 - SSO
 - Registration importing
 - What does customization include?

@@ -54,7 +54,7 @@
   + `themecss.liquid` houses additonal CSS code for the theme. It overrides the Bootstrap CSS.
 
 
-## Emails (a.k.a. Notifications)
+## <a name="email"></a>Emails (a.k.a. Notifications)
 
 - These files are found in the **Notifications** folder. They represent the layout and content of emails that are sent to registrants on an event-by-event basis.
 - This folder _does not_ contain any system emails that get sent directly to Stakeholders.
