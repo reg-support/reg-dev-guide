@@ -51,3 +51,11 @@ Unfortunately, the Liquid tags that are used in the IER Views differ from those 
 - Venue Name - `venue.name`
 - Venue Postal Code - `venue.address.postal_code`
 - Venue Region - `venue.address.region`
+
+### Subject Line changes
+
+- Change the subject line of any email with the following syntax:
+
+```
+{% subject “some new subject” %}
+```
