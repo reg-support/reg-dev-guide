@@ -57,5 +57,5 @@ Unfortunately, the Liquid tags that are used in the IER Views differ from those 
 - Change the subject line of any email with the following syntax:
 
 ```
-{% subject “some new subject” %}
+{% subject 'some new subject' %}
 ```
