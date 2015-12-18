@@ -162,8 +162,9 @@ The following tags are available for use in the iCal email:
     
 ***
 
-- Venue Properties - `{{ venue.properties.test_field }}` **`test_field` is whatever the name of your field becomes**
+- Venue Properties - `{{ venue.properties.test_field }}` 
     + Displays `Hello` if `Hello` is what you added to your property field during creation.
+    + **`test_field` is whatever the name of your field becomes**
     
 ***
 
