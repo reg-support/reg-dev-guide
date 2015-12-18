@@ -28,7 +28,6 @@ Unfortunately, the Liquid tags that are used in the IER Views differ from those 
 - Conference ID - `event.audio_provider.conference_id`
 - Custom Event Fields - `event.customs.field_name`
 - Email Content - `email.content`
-- Event Details Title - `event_details_title`
 - Event Provider Type - `event.meeting_provider.type`
 - Event Start Date - `event.start | date: 'MMMM d, yyyy'`
 - Event Start Time - `event.start | date: 'h:mmtt'`
@@ -167,6 +166,24 @@ The following tags are available for use in the iCal email:
 - Venue Properties - `{{ venue.properties.test_field }}` 
     + Displays `Hello` if `Hello` is what you added to your property field during creation.
     + **`test_field` is whatever the name of your field becomes**
+    
+***
+
+
+### Topic Related Tags
+
+- Topic Title - `{{ topic.title }}`
+    + Displays `Test Topic`
+
+***
+
+- Topic Sub Title - `{{ topic.sub_title }}`
+    + Displays `This is the subtitle.`
+
+***
+
+- Topic Description - `{{ topic.description }}`
+    + Displays `This is the description`
     
 ***
 
