@@ -56,6 +56,8 @@ Unfortunately, the Liquid tags that are used in the IER Views differ from those 
 
 The following tags are available for use in the iCal email: 
 
+#### Event Related Tags
+
 - Event Provider Type - `{{ event.meeting_provider.type }}` 
     + Displays `webex-meeting`
     
@@ -112,6 +114,59 @@ The following tags are available for use in the iCal email:
     + Displays `generic-audio`
 
 ***
+
+#### Venue Related Tags
+
+- Venue Name - `{{ venue.name }}` 
+    + Displays `The White House`
+    
+***
+
+- Venue Address - `{{ venue.address.address1 }}` 
+    + Displays `1600 Pennsylvania Ave`
+    
+***
+
+- Venue Address 2 - `{{ venue.address.address2 }}` 
+    + Displays `1600 Pennsylvania Ave`
+    
+***
+
+- Venue Address Locality - `{{ venue.address.locality }}` 
+    + Displays `Washington DC` aka City
+    
+***
+
+- Venue Address Region - `{{ venue.address.region }}` 
+    + Displays `Washington DC` aka State/Province
+    
+***
+
+- Venue Address Postal Code - `{{ venue.address.postal_code }}` 
+    + Displays `20006`
+    
+***
+
+- Venue Address Country Code - `{{ venue.address.country_code }}` 
+    + Displays `US`
+    
+***
+
+- Venue Address Latitude - `{{ venue.latitude }}` 
+    + Displays `38.89719`
+    
+***
+
+- Venue Address Longitude - `{{ venue.longitude }}` 
+    + Displays `-77.036544`
+    
+***
+
+- Venue Properties - `{{ venue.properties.test_field }}` **`test_field` is whatever the name of your field becomes**
+    + Displays `Hello` if `Hello` is what you added to your property field during creation.
+    
+***
+
 ### Subject Line changes
 
 - Change the subject line of any email with the following syntax:
