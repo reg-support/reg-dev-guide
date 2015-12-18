@@ -52,6 +52,26 @@ Unfortunately, the Liquid tags that are used in the IER Views differ from those 
 - Venue Postal Code - `venue.address.postal_code`
 - Venue Region - `venue.address.region`
 
+### Liquid Tags for iCal
+
+The following tags are available for use in the iCal email: 
+
+- Event Provider Type - `{{ event.meeting_provider.type }}`
+- Event Start Date - `{{ event.start | date: 'MMMM d, yyyy' }}`
+- Event Start Time - `{{ event.start | date: 'h:mmtt' }}`
+- Event Title - `{{ event.title }}`
+- Event Subtitle - `{{ event.sub_title }}`
+- Event UTC Start - `{{ event.utc_start }}`
+- Event UTC End - `{{ event.utc_end }}`
+- Event End - `{{ event.end }}`
+- Event Duration - `{{ event.duration }}`
+- Event Type - `{{ event.type }}`
+- Event Details Page - `{{ event.details_page }}`
+- Event Register Page - `{{ event.register_page }}`
+- Event Meeting Provider Type - `{{ event.meeting_provider.type }}`
+- Event Audio Provider Type - `{{ event.audio_provider.type }}`
+
+
 ### Subject Line changes
 
 - Change the subject line of any email with the following syntax:
@@ -59,3 +79,4 @@ Unfortunately, the Liquid tags that are used in the IER Views differ from those 
 ```
 {% subject 'some new subject' %}
 ```
+
