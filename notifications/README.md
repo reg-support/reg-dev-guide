@@ -133,12 +133,14 @@ The following tags are available for use in the iCal email:
 ***
 
 - Venue Address Locality - `{{ venue.address.locality }}` 
-    + Displays `Washington DC` aka City
+    + City
+    + Displays `Washington DC` 
     
 ***
 
 - Venue Address Region - `{{ venue.address.region }}` 
-    + Displays `Washington DC` aka State/Province
+    - State/Province
+    + Displays `Washington DC` 
     
 ***
 
