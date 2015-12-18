@@ -58,30 +58,43 @@ The following tags are available for use in the iCal email:
 
 - Event Provider Type - `{{ event.meeting_provider.type }}` 
     + Displays `webex-meeting`
+    
 - Event Start Date - `{{ event.start | date: 'MMMM d, yyyy' }}`
     + Displays `December 31, 2015`
+    
 - Event Start Time - `{{ event.start | date: 'h:mmtt' }}`
     + Displays `12:00PM`
+    
 - Event Title - `{{ event.title }}`
     + Displays `ThemeNG Basic Test Event`
+    
 - Event Subtitle - `{{ event.sub_title }}`
     + Displays `This here is the subtitle`
+    
 - Event UTC Start - `{{ event.utc_start }}`
     + Displays `12/31/2015 8:00:00 PM`
+    
 - Event UTC End - `{{ event.utc_end }}`
     + Displays `12/31/2015 9:00:00 PM`
+    
 - Event End - `{{ event.end }}`
     + Displays `12/31/2015 1:00:00 PM` **use this one unless you want a UTC timezone**
+    
 - Event Duration - `{{ event.duration }}`
     + Displays `60`
+    
 - Event Type - `{{ event.type }}`
     + Displays `Online`
+    
 - Event Details Page - `{{ event.details_page }}`
     + Displays `http://themeng.ier.intercall.com/details/acqewuyittsz4ar`
+    
 - Event Register Page - `{{ event.register_page }}`
     + Displays `http://themeng.ier.intercall.com/ier/register/acqewuyittsz4ar`
+    
 - Event Meeting Provider Type - `{{ event.meeting_provider.type }}`
     + Displays `webex-meeting`
+    
 - Event Audio Provider Type - `{{ event.audio_provider.type }}`
     + Displays `generic-audio`
 
