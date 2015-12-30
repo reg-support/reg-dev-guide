@@ -51,9 +51,19 @@ Unfortunately, the Liquid tags that are used in the IER Views differ from those 
 - Venue Postal Code - `venue.address.postal_code`
 - Venue Region - `venue.address.region`
 
+**Note**
+> For comparison against an empty string, use `nil`...
+
+```
+{% if event.audio_provider.toll_free_audio != nil %}
+  {{ 'Toll-Free' | localize }}#: {{ event.audio_provider.toll_free_audio }}<br/>
+{% endif %}
+```
+
+
 ### Liquid Tags for iCal
 
-The following tags are available for use in the iCal email: 
+The following tags are available for use in the iCal email:
 
 #### Event Related Tags
 
@@ -78,13 +88,13 @@ The following tags are available for use in the iCal email:
 
 ***
 - Event End - `{{ event.end }}`
-    + Displays `12/31/2015 1:00:00 PM` 
+    + Displays `12/31/2015 1:00:00 PM`
     + **use this one generally, as opposed to the UTC tags**
 
 ***
-- Event Provider Type - `{{ event.meeting_provider.type }}` 
+- Event Provider Type - `{{ event.meeting_provider.type }}`
     + Displays `webex-meeting`
-    
+
 ***
 - Event UTC Start - `{{ event.utc_start }}`
     + Displays `12/31/2015 8:00:00 PM`
@@ -117,57 +127,57 @@ The following tags are available for use in the iCal email:
 
 #### Venue Related Tags
 
-- Venue Name - `{{ venue.name }}` 
+- Venue Name - `{{ venue.name }}`
     + Displays `The White House`
-    
+
 ***
 
-- Venue Address - `{{ venue.address.address1 }}` 
+- Venue Address - `{{ venue.address.address1 }}`
     + Displays `1600 Pennsylvania Ave`
-    
+
 ***
 
-- Venue Address 2 - `{{ venue.address.address2 }}` 
+- Venue Address 2 - `{{ venue.address.address2 }}`
     + Displays `1600 Pennsylvania Ave`
-    
+
 ***
 
-- Venue Address Locality - `{{ venue.address.locality }}` 
+- Venue Address Locality - `{{ venue.address.locality }}`
     + City
-    + Displays `Washington DC` 
-    
+    + Displays `Washington DC`
+
 ***
 
-- Venue Address Region - `{{ venue.address.region }}` 
+- Venue Address Region - `{{ venue.address.region }}`
     - State/Province
-    + Displays `Washington DC` 
-    
+    + Displays `Washington DC`
+
 ***
 
-- Venue Address Postal Code - `{{ venue.address.postal_code }}` 
+- Venue Address Postal Code - `{{ venue.address.postal_code }}`
     + Displays `20006`
-    
+
 ***
 
-- Venue Address Country Code - `{{ venue.address.country_code }}` 
+- Venue Address Country Code - `{{ venue.address.country_code }}`
     + Displays `US`
-    
+
 ***
 
-- Venue Address Latitude - `{{ venue.latitude }}` 
+- Venue Address Latitude - `{{ venue.latitude }}`
     + Displays `38.89719`
-    
+
 ***
 
-- Venue Address Longitude - `{{ venue.longitude }}` 
+- Venue Address Longitude - `{{ venue.longitude }}`
     + Displays `-77.036544`
-    
+
 ***
 
-- Venue Properties - `{{ venue.properties.test_field }}` 
+- Venue Properties - `{{ venue.properties.test_field }}`
     + Displays `Hello` if `Hello` is what you added to your property field during creation.
     + **`test_field` is whatever the name of your field becomes**
-    
+
 ***
 
 
@@ -185,7 +195,7 @@ The following tags are available for use in the iCal email:
 
 - Topic Description - `{{ topic.description }}`
     + Displays `This is the description`
-    
+
 ***
 
 ### Subject Line changes
@@ -195,4 +205,3 @@ The following tags are available for use in the iCal email:
 ```
 {% subject 'some new subject' %}
 ```
-
