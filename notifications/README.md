@@ -22,6 +22,13 @@
 
 Unfortunately, the Liquid tags that are used in the IER Views differ from those used in the IER Notifications. Here is a list of the tags that are currently in use:
 
+> Note that these snippets use Output markup instead of Tag markup.
+> 
+> Output markup: {{ event.title }}
+> 
+> Tag markup: {% event.title %}
+> 
+
 - Attend Page - `registrant.attend_page`
 - Audio Passcode - `event.audio_provider.passcode`
 - Authorization Code - `order.provider.auth_code`
@@ -41,6 +48,7 @@ Unfortunately, the Liquid tags that are used in the IER Views differ from those 
 - Password Reset URL - `reset.url`
 - Provider Name - `order.provider.name`
 - Registrant PIN Code - `registrant.pin_code`
+- Site URL - `siteurl`
 - Theme Settings - `theme.setting.name_of_setting` (_note the singular use of 'setting'_)
 - Time Zone Abbreviation - `timezone.abbreviation`
 - Toll Free Audio # - `event.audio_provider.toll_free_audio`
