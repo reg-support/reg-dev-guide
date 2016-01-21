@@ -29,6 +29,8 @@ Unfortunately, the Liquid tags that are used in the IER Views differ from those 
 - Custom Event Fields - `event.customs.field_name`
 - Email Content - `email.content`
 - Event Provider Type - `event.meeting_provider.type`
+- Event Recording Link - `event.recording.link`
+- Event Recording Note - `event.recording.note`
 - Event Start Date - `event.start | date: 'MMMM d, yyyy'`
 - Event Start Time - `event.start | date: 'h:mmtt'`
 - Event Title - `event.title`
