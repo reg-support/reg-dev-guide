@@ -63,13 +63,15 @@
     - `Toggle` - a simple toggle switch. Returns a value of True or False.
     - `File` - Works much like image. Allows a user to upload a file to IER. Returns a partial URL `/ier/content/b75e9e4d70814234b5eddb09358d7267.pdf`.
     - `Markdown` - Allows you to add Markdown in the admin. Returns markdown. Don't forget to use the `markdown` pipe! `{{ theme.settings.markdown | markdown }}`
-    - `Dropdown` - Allows you to add a dropdown menu to the theme configuration settings. Value is a plain string but requires a little extra setup in the Theme.Cofig.
+    - `Dropdown` - Allows you to add a dropdown menu to the theme configuration settings. Value is a plain string but requires a little extra setup in the Theme.Config.
+    
       ```
       <add name="dropdown" title="Dropdown" type="Options" default="yep">
         <option title="Yep" value="yep" />
         <option title="Nope" value="nope" />
       </add>
       ```
+      
   + `default` (optional) - as the name suggests, this will be the default value of the custom setting; it can be omitted altogether if no default value is needed. 
 
 ##### Grouping
