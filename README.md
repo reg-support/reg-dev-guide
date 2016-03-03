@@ -1,5 +1,3 @@
----
-
 ## Reg Dev Guide
 
 ##### Topics:
