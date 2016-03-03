@@ -9,6 +9,7 @@
 - [Pages](#3)
 - [Settings & Groups](#4)
 - [Connecting Settings & Views](#5)
+- [Custom Settings](#6)
 
 
 ## <a name="1"></a>Basic Information
@@ -59,20 +60,20 @@
   + `type` - this is the data type you are defining; most custom settings will be of "Text" type, but we have a few options available to us:
     - `Text` - a plain text string; use this for creating a custom text field (e.g. for displaying custom copyright information). Returns a plain string.
     - `Image` - a digital image; using this type will allow the user to upload an image to the back-end in their site. Returns a partial URL `/ier/content/0ef33c2968a34e8cb0c2828320aa06ba.JPG`.
-    - `Color` - a color in hexadecimal format; use this when you want to define customizable colors (you do generally want to define a default value for this data type). Returns a string but in hexadecimal format. 
+    - `Color` - a color in hexadecimal format; use this when you want to define customizable colors (you do generally want to define a default value for this data type). Returns a string but in hexadecimal format.
     - `Toggle` - a simple toggle switch. Returns a value of True or False.
     - `File` - Works much like image. Allows a user to upload a file to IER. Returns a partial URL `/ier/content/b75e9e4d70814234b5eddb09358d7267.pdf`.
     - `Markdown` - Allows you to add Markdown in the admin. Returns markdown. Don't forget to use the `markdown` pipe! `{{ theme.settings.markdown | markdown }}`
     - `Dropdown` - Allows you to add a dropdown menu to the theme configuration settings. Value is a plain string but requires a little extra setup in the Theme.Config.
-    
+
       ```
       <add name="dropdown" title="Dropdown" type="Options" default="yep">
         <option title="Yep" value="yep" />
         <option title="Nope" value="nope" />
       </add>
       ```
-      
-  + `default` (optional) - as the name suggests, this will be the default value of the custom setting; it can be omitted altogether if no default value is needed. 
+
+  + `default` (optional) - as the name suggests, this will be the default value of the custom setting; it can be omitted altogether if no default value is needed.
 
 ##### Grouping
 - We can group similar settings together by nesting them within a `<group>` element, and providing a `name` attribute. When accessed from the back-end, grouped settings will be grouped together in a collapsable panel.
@@ -108,5 +109,24 @@ h1, h2 {
 - In the above example, we have applied the Site Header Color style that we declared in Theme.config to both the `h1` and `h2` tags. In this way, we use Liquid to create CSS variables just like we would with LESS or SASS.
 - Liquid can also be used to add text blocks or images to your HTML.
 - For more information on Liquid, [check out this link](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers).
+
+[Back to Top](#top)
+
+## <a name="6"></a>Custom Settings
+
+#### Shopping Cart/Multi-Event Registration
+
+- The multi-registration feature allows registrants to add multiple events to a shopping cart and register for all of them at once.
+- **This is disabled by default**, but it can be enabled in the 'General' section of Theme Configuration in the site's admin panel by setting the 'Shopping Cart' dropdown menu to 'Enabled'.
+- This setting can be accessed in Liquid templates through the `cartEnabled` variable; the value will be a simple string of either `yes` or `no`, so you can show/hide elements by checking for these values, as in the example below (simplified for brevity).
+
+```html
+{% if theme.settings.cartEnabled == 'yes' %}
+  <!-- 'add to cart' button, when enabled in Theme.config -->
+  <button>
+    {{ 'Add to Cart' | localize }}
+  </button>
+{% endif %}
+```
 
 [Back to Top](#top)
