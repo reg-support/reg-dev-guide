@@ -1,7 +1,5 @@
 ## Reg Dev Guide
 
----
-
 ##### Topics:
 
 - [Themes](Themes/README.md)
