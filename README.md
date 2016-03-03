@@ -1,4 +1,6 @@
-# Reg Dev Guide
+## Reg Dev Guide
+
+---
 
 ##### Topics:
 
@@ -7,16 +9,5 @@
   - [File Structure](file_structure/README.md)
 - [Custom Presenters Fields](presenter_fields/README.md)
 - [Custom Venue Fields](venue_fields/README.md)
-- Custom Event Fields
-- Custom Social Authorization
 - [Notifications](notifications/README.md)
-- SSO
-- [Registration importing](reg_import/README.md)
-- What does customization include?
-  - Nav Items
-  - New Pages
-  - Native text color and content alterations
-  - Custom Support Page
-- What constitutes a work order?
-  - Layout changes
-  - Corporation site emulation
+- [Registration Importing](reg_import/README.md)
