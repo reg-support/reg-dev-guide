@@ -11,6 +11,7 @@
 - [Connecting Settings & Views](#5)
 - [Custom Settings](#6)
 
+---
 
 ## <a name="1"></a>Basic Information
 
@@ -22,6 +23,9 @@
 
 
 [Back to Top](#top)
+
+---
+
 ## <a name="2"></a>Locales
 
 - For localized sites, we can specify which locale files are available to the site in the `<locales>` element, near the top of the page; e.g. the following block specifies that US English, German, and Spanish are available, with US English being the default:
@@ -41,6 +45,9 @@
 
 
 [Back to Top](#top)
+
+---
+
 ## <a name="3"></a>Pages
 
 - The `Pages` section is where you tell IER that you have added a new page to your `Views`. It is also where the default landing page of your site is set.
@@ -48,12 +55,16 @@
 - To change the default landing page, just change the string in the `default` attribute to one of the other page names.  
 
 [Back to Top](#top)
+
+---
+
 ## <a name="4"></a>Settings & Groups
 
 - We can define custom settings within the `<settings>` element. Anything we define here will show up under the "Theme Details" page in a Site's back-end, and can be edited directly from the back-end by clicking on the "Configure Theme" link on the right side of the page.
 - Similar to adding locales, we can add custom settings here by inserting an `<add>` element
 
 ##### Attributes
+
 - There are 4 attributes that are of interest when adding a custom setting:
   + `name` - this is the name of the setting as it will be passed from the server into our template pages; since we will be accessing this as a variable in code, it should be a single camel-case word, like `siteTitle`
   + `title` - this is the "pretty print" version, as it will show up in the back-end; it can be mostly anything you want, but generally speaking, title-case is probably the best, like `Site Title`
@@ -66,7 +77,7 @@
     - `Markdown` - Allows you to add Markdown in the admin. Returns markdown. Don't forget to use the `markdown` pipe! `{{ theme.settings.markdown | markdown }}`
     - `Dropdown` - Allows you to add a dropdown menu to the theme configuration settings. Value is a plain string but requires a little extra setup in the Theme.Config.
 
-      ```
+      ```xml
       <add name="dropdown" title="Dropdown" type="Options" default="yep">
         <option title="Yep" value="yep" />
         <option title="Nope" value="nope" />
@@ -76,10 +87,12 @@
   + `default` (optional) - as the name suggests, this will be the default value of the custom setting; it can be omitted altogether if no default value is needed.
 
 ##### Grouping
+
 - We can group similar settings together by nesting them within a `<group>` element, and providing a `name` attribute. When accessed from the back-end, grouped settings will be grouped together in a collapsable panel.
 - We can put as many or as few settings into a group as necessary, and use as many separate groups as necessary.
 
 ##### Example
+
 - Putting this all together, we might end up with a settings group that looks something like the following:
 
   ```xml
@@ -92,6 +105,8 @@
   ```
 
 [Back to Top](#top)
+
+---
 
 ## <a name="5"></a>Connecting Settings & Views
 
@@ -112,9 +127,11 @@ h1, h2 {
 
 [Back to Top](#top)
 
+---
+
 ## <a name="6"></a>Custom Settings
 
-#### Shopping Cart/Multi-Event Registration
+##### Shopping Cart/Multi-Event Registration
 
 - The multi-registration feature allows registrants to add multiple events to a shopping cart and register for all of them at once.
 - **This is disabled by default**, but it can be enabled in the 'General' section of Theme Configuration in the site's admin panel by setting the 'Shopping Cart' dropdown menu to 'Enabled'.
