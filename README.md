@@ -5,7 +5,7 @@
 - [Themes](Themes/README.md)
   - [Theme.config](theme_config/README.md)
   - [File Structure](file_structure/README.md)
-- [API Usage](api_docs/README.md)
+- [API Overview](api_docs/README.md)
 - [Custom Presenters Fields](presenter_fields/README.md)
 - [Custom Venue Fields](venue_fields/README.md)
 - [Notifications](notifications/README.md)
