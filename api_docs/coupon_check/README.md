@@ -1,6 +1,8 @@
 # Coupon Check API
 
-- The coupon check API validates a coupon code during checkout, and assuming the code is valid, returns a set of data related to the coupon.
+[Return to API Main Page](../README.md)
+
+- The `coupon check` API validates a coupon code during checkout, and assuming the code is valid, returns a set of data related to the coupon.
 - It is important to note that the server does not handle the actual calcuation of the updated price, so it is up to the client-side code to use the returned data to adjust the price before submitting.
 - Another important note is that the server will not return any data for an invalid coupon code--it simply gives us a `404` error.
 - The URL for this API is not provided in any other API results, but rather rendered via Liquid through the `coupon_check_url` variable.
