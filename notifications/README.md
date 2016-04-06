@@ -45,6 +45,7 @@ Unfortunately, the Liquid tags that are used in the IER Views differ from those 
 - iCal - `event.icalendar_url`
 - Order Date - `order.date`
 - Order Item - `item.SessionId`
+- Order Total - `order.total`
 - Password Reset URL - `reset.url`
 - Provider Name - `order.provider.name`
 - Registrant PIN Code - `registrant.pin_code`
