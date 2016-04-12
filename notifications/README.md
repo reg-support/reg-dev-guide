@@ -38,8 +38,8 @@ Unfortunately, the Liquid tags that are used in the IER Views differ from those 
 - Event Provider Type - `event.meeting_provider.type`
 - Event Recording Link - `event.recording.link`
 - Event Recording Note - `event.recording.note`
-- Event Start Date - `event.start | date: 'MMMM d, yyyy'`
-- Event Start Time - `event.start | date: 'h:mmtt'`
+- Event Start Date/Time - `event.start | date: 'MMMM d, yyyy h:mmtt'`
+- Event End Date/Time - `event.end | date: 'MMMM d, yyyy h:mmtt'`
 - Event Title - `event.title`
 - First Name - `registrant.first_name`
 - iCal - `event.icalendar_url`
